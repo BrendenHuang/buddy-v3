@@ -1,0 +1,61 @@
+<ion-header no-header>
+
+  <ion-toolbar>
+    <ion-segment mod="md" [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value ="0">
+        Upcoming
+      </ion-segment-button>
+      <ion-segment-button value="1">
+        Completed
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-slides  [fullscreen]="true" #slides pager="false" [options]="sliderOptions" (ionSlideDidChange)="slidesChange(slides)" (ionSlidesDidLoad)="slidesChange(slides)">
+    
+    <ion-slide class="upcoming">
+      <ion-card class="upcoming-card">
+        <ion-card-header>
+          <ion-card-subtitle class="card-subtitle">
+            18 Jun 21, 10:30 pm
+          </ion-card-subtitle>
+          
+
+        </ion-card-header>
+        <ion-item class="card-content">
+          <ion-label>
+            <h2>Core Workout</h2>
+          </ion-label>
+          <ion-fab horizontal="end" (click)="myNotification()">
+            <ion-fab-button class="notify-btn" color="none">
+              <ion-icon *ngIf=!notification name="notifications-off-circle-outline"></ion-icon>
+              <ion-icon *ngIf=notification name="notifications-circle-outline"></ion-icon>
+            </ion-fab-button>
+          </ion-fab>
+          
+        </ion-item>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="upcoming-card" (click)="details()">
+        <ion-card-header>
+          <ion-card-subtitle class="card-subtitle">
+            18 Jun 21, 10:30 pm
+          </ion-card-subtitle>
+          
+
+        </ion-card-header>
+        <ion-item class="card-content">
+          <ion-label>
+            <h2>Core Workout</h2>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-slide>  
+  </ion-slides>
+
+</ion-content>

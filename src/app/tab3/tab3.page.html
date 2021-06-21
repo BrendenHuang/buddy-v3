@@ -1,0 +1,106 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Match
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+  <form [formGroup]="searchBuddy">
+    <ion-card>
+    <ion-card-title style="font-size:1rem; padding-left:3%; padding-top:2%">Search</ion-card-title>
+    <ion-item> 
+      <ion-label>Age:</ion-label>
+
+      <ion-select formControlName="age">
+
+        <ion-select-option value="18-21">
+          18-21
+        </ion-select-option>
+
+        <ion-select-option value="22-25">
+          22-25
+        </ion-select-option>
+
+        <ion-select-option value="26-29">
+          26-29
+        </ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item> 
+      <ion-label>Gender:</ion-label>
+
+      <ion-select formControlName="age">
+
+        <ion-select-option value="male">
+          Male
+        </ion-select-option>
+
+        <ion-select-option value="female">
+          Female
+        </ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+    <ion-item> 
+      <ion-label>Location: </ion-label>
+
+      <ion-select formControlName="location">
+
+        <ion-select-option value="amk">
+          Ang Mo Kio
+        </ion-select-option>
+
+        <ion-select-option value="Bedok">
+          Bedok
+        </ion-select-option>
+
+        <ion-select-option value="Bishan">
+          Bishan
+        </ion-select-option>
+
+      </ion-select>
+    </ion-item>
+ 
+    <ion-item> 
+      <ion-label>Fitness Level</ion-label>
+
+      <ion-select formControlName="fitnesslevel">
+
+        <ion-select-option value="5">
+          5
+        </ion-select-option>
+
+        <ion-select-option value="4">
+          4
+        </ion-select-option>
+
+        <ion-select-option value="3">
+          3
+        </ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+    <!--add update button-->
+    <ion-button expand="block" color="secondary">
+      Search
+    </ion-button>
+
+  </ion-card>
+  </form>
+
+</ion-content>

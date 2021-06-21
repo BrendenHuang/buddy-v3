@@ -1,0 +1,27 @@
+h2 {
+  font-size: 20px;
+}
+
+.upcoming {
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.upcoming-card {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.card-subtitle {
+  float: right;
+}
+
+.card-content {
+  border-bottom: 1px solid black;
+}
+
+.notify-btn {
+  width: 30px;
+  height: 30px;
+  --box-shadow: none;
+}

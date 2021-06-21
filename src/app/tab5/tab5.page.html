@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Fitness List
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+  <ion-item>
+  <ion-label [routerLink]="['/chestworkouts']">
+    <h2>Chest</h2>
+  </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label [routerLink]="['/backworkouts']">
+      <h2>Back</h2>
+    </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label [routerLink]="['/shoulderworkouts']">
+        <h2>Shoulder</h2>
+      </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label [routerLink]="['/armsworkouts']">
+          <h2>Arms</h2>
+        </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label [routerLink]="['/legworkouts']">
+            <h2>Legs</h2>
+          </ion-label>
+          </ion-item>
+
+          <ion-item>
+            <ion-label [routerLink]="['/absworkouts']">
+              <h2>Abs</h2>
+            </ion-label>
+            </ion-item>
+
+
+  </ion-list>
+
+</ion-content>
